@@ -1,1 +1,4 @@
-<app-movies></app-movies>
+<app-movies *ngIf="isDone"  [list]="['shlomo','juda']" ></app-movies>
+<button (click)="toggleComponent()">toggle</button>
+
+

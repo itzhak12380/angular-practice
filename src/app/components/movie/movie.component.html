@@ -1,1 +1,18 @@
-<p>movie works!</p>
+<div
+  *ngIf="!!movie"
+  class="good-movie"
+  [ngStyle]="{'border': movie.rating > 8 ? 'px solid green' :  'px solid red' , 'border-width': '35px'}"
+  [ngClass]="{ 'good-movie': movie.rating > 8, padding: true }"
+>
+  <div [ngSwitch]="movie.type">
+    <p *ngSwitchCase="MovieType.action">Action</p>
+    <p *ngSwitchCase="MovieType.drama">Drama</p>
+    <p *ngSwitchCase="MovieType.fantasy">Fantasy</p>
+    <p *ngSwitchDefault>Heros</p>
+  </div>
+  <h1>name: {{ movie.name | uppercase }}</h1>
+  <span>rating: {{ movie.rating }}</span>
+  <p>release: {{ movie.releaseDate | date }}</p>
+
+  <button (click)="DeleteMovie()">delete movie</button>
+</div>

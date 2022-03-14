@@ -1,0 +1,11 @@
+.good-movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.good-movie button{
+    width: fit-content;
+}
+.padding{
+    padding: 10px;
+}

@@ -1,4 +1,5 @@
-<div class="movies">{{title}}
+<div   class="movies">{{title}}
 
-    <app-movie></app-movie>
+    <app-movie *ngFor="let movie of movieList let i = index" [movie]="movie" [movieIndex]="i" [borderWidth] ="i * 2" (onDeleteMovie)="deleteMovie($event)"></app-movie>
+    <app-template-driven-form></app-template-driven-form>
 </div>

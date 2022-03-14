@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'class-one';
+
+  isDone = true;
+  toggleComponent(){
+    this.isDone = !this.isDone
+    
+  }
 }
