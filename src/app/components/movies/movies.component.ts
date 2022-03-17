@@ -46,8 +46,8 @@ export class mvoiesComponents
         this.movieList.splice(movieIndex,1)
   }
   ngOnInit(): void {
-    console.log('on init doring ', this.movieService.setMovies(this.movieList));
-    console.log('on init after ', this.movieService.getMovies());
+    // console.log('on init doring ', this.movieService.setMovies(this.movieList));
+    // console.log('on init after ', this.movieService.getMovies());
     
   }
   title = 'mvoiesComponents  works';

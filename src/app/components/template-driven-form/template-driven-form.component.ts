@@ -12,7 +12,7 @@ export class TemplateDrivenFormComponent implements OnInit {
   @ViewChild("f") form:any;
   langs:Array<String> = ['english','hebrow','amharic']
   ngOnInit(): void {
-    console.log("tamplate driven tamplate ", this.MovieService.getMovies());
+    // console.log("tamplate driven tamplate ", this.MovieService.getMovies());
   }
   
   public submitForm(){
