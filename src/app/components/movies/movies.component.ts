@@ -48,6 +48,10 @@ export class mvoiesComponents
   ngOnInit(): void {
     // console.log('on init doring ', this.movieService.setMovies(this.movieList));
     // console.log('on init after ', this.movieService.getMovies());
+    this.movieService.movieBehaivorSubject$.subscribe(data =>{
+        this.movieList = [...this.movieList,data]
+    })
+    // this.movieService.movieBehaivorSubject$.subscribe()
     
   }
   title = 'mvoiesComponents  works';

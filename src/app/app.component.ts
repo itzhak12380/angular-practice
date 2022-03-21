@@ -39,5 +39,6 @@ export class AppComponent implements OnInit {
 
     console.log("after subscription");
     
+    // this.Obserbales.MovieSubject$.subscribe()
   }
 }

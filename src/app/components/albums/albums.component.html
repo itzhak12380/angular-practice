@@ -1,0 +1,15 @@
+<p>albums works!</p>
+<table *ngIf="!!albums && albums.length">
+  <thead>
+    <tr>
+      <th *ngFor="let item of tableTitle">{{ item }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of albums">
+      <td>{{ item.id }}</td>
+      <td>{{ item.userId }}</td>
+      <td>{{item.title>></td>
+    </tr>
+  </tbody>
+</table>
